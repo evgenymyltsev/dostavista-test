@@ -1,0 +1,47 @@
+@import "src/styles/variables.scss";
+
+.modal {
+  &-container {
+    width: 415px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.7rem 2rem;
+    background: $main-color;
+    border-radius: 2px;
+
+    @media screen and (max-width: 26.5rem) {
+      width: 300px;
+    }
+  }
+
+  &-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+    letter-spacing: 1px;
+  }
+
+  &-content {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: $third-color;
+    line-height: 1.7;
+  }
+
+  &-input {
+    margin-bottom: 1.5rem;
+    background: url("../../images/pin.svg") no-repeat;
+    background-size: 1rem;
+    background-position: 0.5rem center;
+    padding-left: 2rem;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

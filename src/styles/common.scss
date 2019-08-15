@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import "./reset.scss";
+@import "./variables.scss";
+
+html,
+body {
+  background-color: $main-background-color;
+  font-size: $main-font-size;
+  font-family: $main-font-family;
+}
